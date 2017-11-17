@@ -4,3 +4,5 @@
 .card-image{
 	padding: 5px;
 }
+
+.navbar-fixed {position: absolute;z-index:999999999;}
