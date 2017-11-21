@@ -2,13 +2,15 @@
       $('.parallax').parallax();
 
 
-      // $.ajax({
-      //	url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=Goosinator&type=beer&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json',
-      // 	method: 'GET'
-      // }).done(function(response){
+
+       $.ajax({
+      	url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=Goosinator&type=beer&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json',
+       	method: 'GET'
+       }).done(function(response){
       	
-      // 	console.log(response)
-      // })
+       	console.log(response)
+       })
+
 
       
 
@@ -42,6 +44,8 @@
 
 
     });
+
+
 
 
 
