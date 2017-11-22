@@ -3,7 +3,14 @@
 
 
       $.ajax({
-      	url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=Goosinator&type=beer&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json',
+        url:'https://maps.googleapis.com/maps/api/geocode/json?address=90504&key=AIzaSyAH9tIVsJmQ37qrU7b3NY3smmAtUmCrgIs',
+        method: 'GET'
+      }).done(function(zipcode){
+        console.log(zipcode)
+      })
+
+      $.ajax({
+      	url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search/geo/point?lat=33.8870609&lng=-118.308933&key=9ec4dd555b05addcdc32bc600a2dd1f2&unit=mi&format=json',
       	method: 'GET'
       }).done(function(response){
       	
@@ -41,7 +48,7 @@
                 // console.log('happy: '+ happy)
                 // console.log('anger: '+ anger)
                 // console.log('sad: '+ sad)
-                
+                //Testing only
                 if (happy > anger){
                   div.append($('<p>').text('Happy Score: '+ happy))
                   div.append($('<img class="images_div" src="'+img+'">'))
