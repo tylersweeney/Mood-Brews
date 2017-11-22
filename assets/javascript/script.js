@@ -18,8 +18,8 @@
           url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search/geo/point?lat='+lat+'&lng='+lng+'&key=9ec4dd555b05addcdc32bc600a2dd1f2&unit=mi&format=json',
           method: 'GET'
         }).done(function(response){
-
           console.log(response)
+          
         })
       })
 
