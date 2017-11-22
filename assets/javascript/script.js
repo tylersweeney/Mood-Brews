@@ -5,6 +5,7 @@
       var zipCode = prompt('What is your zipcode?')
       
 
+
       $.ajax({
         url:'https://maps.googleapis.com/maps/api/geocode/json?address='+zipCode+'&key=AIzaSyAH9tIVsJmQ37qrU7b3NY3smmAtUmCrgIs',
         method: 'GET'
@@ -14,6 +15,7 @@
         var lat = zip.results[0].geometry.bounds.northeast.lat
         var lng = zip.results[0].geometry.bounds.northeast.lng
 
+
         $.ajax({
           url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search/geo/point?lat='+lat+'&lng='+lng+'&key=9ec4dd555b05addcdc32bc600a2dd1f2&unit=mi&format=json',
           method: 'GET'
@@ -21,6 +23,7 @@
           console.log(response)
           
         })
+
       })
 
       
@@ -74,6 +77,8 @@
         openPicker();
       });
     });
+
+
 
 
 
