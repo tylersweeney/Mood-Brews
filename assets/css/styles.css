@@ -1,12 +1,78 @@
-.nav-wrapper{
+/* CSS for Pushpit elements */
+html, body, .block {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
-.card-image{
+.pin-top {
+	position: relative;
+}
+
+.pin-bottom {
+	position: relative;
+}
+
+.pinned {
+	position: fixed !important;
+}
+
+#top-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("http://0104.nccdn.net/1_5/025/200/258/banner---temp-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    border-width: 5px;
+}
+
+#beerme {
+	text-align: center;
+	width: 500px;
+	padding: 20px;
+	font-size: 50px;
+	color: orange;
+	border-radius: 5px;
+	border: none;
+	opacity: 0.8;
+}
+
+.card-image {
 	padding: 5px;
+	border: none;
+	border-radius: 15px;
+}
+
+.parallax-container {
+    height: 350px;
+}
+
+.file-path {
+	color: #000;
 }
 
 .navbar-fixed {position: absolute;z-index:999999999;}
 
-#value1{
-	margin-top: 100px;
+#description {
+	margin-top: 250px;
+	padding: 20px;
+  	transition: all .55s ease;
+  	border: none;
+  	border-radius: 5px;
+  	background: #000;
+  	height: 290px;
+  	width: 750px;
+  	color: orange;
+  	text-align: center;
+  	opacity: 0;
+  	font-size: 13pt;
+  	position: absolute;
+}
+
+#beerme:hover + #description{
+	margin-top: 230px;	
+  	outline: none;
+  	opacity: 0.8;
 }
