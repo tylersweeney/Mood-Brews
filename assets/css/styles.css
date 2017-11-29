@@ -1,6 +1,12 @@
 .nav-wrapper{
+	background-color: #006064;
+}
+.page-footer{
+	background-color: #006064;
 }
 
+
+}
 .card-image{
 	padding: 5px;
 }
