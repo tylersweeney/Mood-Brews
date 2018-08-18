@@ -1,22 +1,26 @@
 {
   "name": "beer-me",
   "version": "1.0.0",
-  "description": "Beer",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Beer-Me-123456789/beer-me.git"
+    "url": "git+https://github.com/tylersweeney/beer-me.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Beer-Me-123456789/beer-me/issues"
+    "url": "https://github.com/tylersweeney/beer-me/issues"
   },
-  "homepage": "https://github.com/Beer-Me-123456789/beer-me#readme",
-  "dependencies": {
-    "jquery": "^3.2.1"
-  }
+  "homepage": "https://github.com/tylersweeney/beer-me#readme"
 }
