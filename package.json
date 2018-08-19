@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "brewerydb-node": "0.0.1",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mongoose": "^5.2.9",

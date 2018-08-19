@@ -3,18 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>Tyler J. Sweeney Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="./styles.css" type="text/css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <h1>BEER ME NEW</h1>
+<div class= "name"></div>
+<div class= "image"></div>
+<!-- <script type="text/javascript">
+
+let title = "/beers=name";
+let queryURL = "http://api.brewerydb.com/v2/?" + title + "&key=fb5932edab9b8bfb7f148d107177dfd3";
+
+$.ajax({
+    url: queryURL,
+    method:"GET"
+}).done(function(response) {
+    console.log(response);
+    console.log(response.Runtime);
+});
+</script> -->
+
 </body>
 
 </html>

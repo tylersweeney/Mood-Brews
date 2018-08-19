@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 3000;
 const ejs = require('ejs');
 const path = require('path');
 const keys = require('./config/keys');
+var BreweryDb = require('brewerydb-node');
+var brewdb = new BreweryDb('your-key-here');
 
 //set up view engine
 app.set('views', path.join(__dirname, '/views'))
