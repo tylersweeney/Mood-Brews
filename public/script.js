@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.parallax').parallax();
 
-let beer= "IPA"
+let beer= "happy"
 
 $.ajax({
 url:"https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=" + beer + "&type=beer&withLabels&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
@@ -9,8 +9,11 @@ method: 'GET'
 }).done(function(response){
   for(let i=0; i<5; i++) {
     // $(".name").html('<img src="' + response.data[i].labels.large + '">')
-    $(".name").html(response.data[i].name)
     console.log(response.data[i].name)
+    console.log("ABV: " + response.data[i].style.abvMax + "%")
+    $(".name").html(response.data[i].name)
+    $(".abv").html("ABV: " + response.data[i].style.abvMax + "%")
+    
   }
   
   
