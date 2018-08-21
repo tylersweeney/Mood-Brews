@@ -7,13 +7,14 @@ $.ajax({
 url:"https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=" + beer + "&type=beer&withLabels&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
 method: 'GET'
 }).done(function(response){
+  let beers = [];
   for(let i=0; i<3; i++) {
     console.log(response.data[i].name)
     console.log(response.data[i].labels.large)
     console.log("ABV: " + response.data[i].style.abvMax + "%")
-    $(".name").html(response.data[i].name)
-    $(".abv").html("ABV: " + response.data[i].style.abvMax + "%")
-    $(".name").html('<img src="' + response.data[i].labels.large + '">')
+    $(".name").append(response.data[i].name)
+    $(".abv").append("ABV: " + response.data[i].style.abvMax + "%")
+    $(".name").append('<img src="' + response.data[i].labels.large + '">')
     // if(Error){
     //   console.log("error")
     // continue;
