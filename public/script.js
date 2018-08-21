@@ -10,11 +10,11 @@ method: 'GET'
   let beers = [];
   for(let i=0; i<3; i++) {
     console.log(response.data[i].name)
-    console.log(response.data[i].labels.large)
+    console.log(response.data[i].labels.medium)
     console.log("ABV: " + response.data[i].style.abvMax + "%")
     $(".name").append(response.data[i].name)
     $(".abv").append("ABV: " + response.data[i].style.abvMax + "%")
-    $(".name").append('<img src="' + response.data[i].labels.large + '">')
+    $(".name").append('<img src="' + response.data[i].labels.medium + '">')
     // if(Error){
     //   console.log("error")
     // continue;
