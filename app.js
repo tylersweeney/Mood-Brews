@@ -8,6 +8,8 @@ const keys = require('./config/keys');
 var BreweryDb = require('brewerydb-node');
 var brewdb = new BreweryDb('your-key-here');
 
+
+
 //set up view engine
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs');
@@ -18,6 +20,8 @@ app.get('/', (req, res) =>{
  
 
 app.use(express.static('public'))
+
+
 
 app.listen(PORT, () => {
     console.log('app now listening for requests on port: ' + PORT);
