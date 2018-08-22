@@ -17,7 +17,7 @@ method: 'GET'
     console.log("ABV: " + response.data[i].style.abvMax + "%")
     $(".name").append(response.data[i].name)
     $(".abv").append("ABV: " + response.data[i].style.abvMax + "%")
-    $(".name").append('<img src="' + response.data[i].labels.medium + '">')
+    $(".image").append('<img src="' + response.data[i].labels.medium + '">')
     if(Error){
       console.log("error")
     continue;
@@ -25,7 +25,7 @@ method: 'GET'
   };
 };
 });
-
+$.ajax
 
   // $('.btn').on('click', function(){
   //   // const client = filestack.init('ACvWqWhqT0uESSK94Rojtz');
@@ -43,6 +43,14 @@ method: 'GET'
 
   // var img = response.filesUploaded[0].url
   // console.log(img)
+
+  $.ajax({
+
+    url: "https://cors-anywhere.herokuapp.com/https://738618318492637:P31Qlc2xmqJmPu6d8hDZsWVcllA@api.cloudinary.com/v1_1/deukkh9yb/resources/image",
+    method: "GET"
+  }).then(function(response){
+    console.log(response)
+  });
   let img = "https://res.cloudinary.com/deukkh9yb/image/upload/v1534902246/wfq5hkm8g44qn9kvpx09.jpg"
   
   $.ajax({
