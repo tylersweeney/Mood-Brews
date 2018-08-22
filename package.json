@@ -4,9 +4,12 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "blueimp-file-upload": "^9.22.0",
     "brewerydb-node": "0.0.1",
+    "cloudinary-jquery": "^2.5.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "mongoose": "^5.2.9",
     "path": "^0.12.7"
   },

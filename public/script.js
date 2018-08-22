@@ -27,7 +27,6 @@ method: 'GET'
 });
 
 
-
   // $('.btn').on('click', function(){
   //   // const client = filestack.init('ACvWqWhqT0uESSK94Rojtz');
   //   // client.pick();
@@ -44,20 +43,15 @@ method: 'GET'
 
   // var img = response.filesUploaded[0].url
   // console.log(img)
+  let img = "https://res.cloudinary.com/deukkh9yb/image/upload/v1534902246/wfq5hkm8g44qn9kvpx09.jpg"
   
-//   $.ajax({
-//     url:'https://api-us.faceplusplus.com/facepp/v3/detect?api_key=ymxM1PfpEkuIniAcXSR6o9tUFCk1Uqo4&api_secret=n6KLZyFDrjsbFycCzxBs-ifyTNuyjZf8&image_url='+img+'&return_attributes=age,gender,smiling,emotion,ethnicity,eyestatus,beauty',
-//     method: 'POST'
-//   }).done(function(results){
-//     console.log(results)
-//   })
-// });
-    
-//     openPicker();
-//   })
-
-
-// });
+  $.ajax({
+    url:'https://api-us.faceplusplus.com/facepp/v3/detect?api_key=gJZ3nUhkeoCAF0PEtxIPqnpKJqdZ2WCI&api_secret=j6_u1B2jNR4K5BGCIyRBrPHhnoYyQ6Vs&image_url='+img+'&return_attributes=age,gender,smiling,emotion,ethnicity,eyestatus,beauty',
+    method: 'POST'
+  }).done(function(results){
+    console.log(results)
+  })
+  
 
 
 
