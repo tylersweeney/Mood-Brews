@@ -43,15 +43,17 @@ $.ajax
 
   // var img = response.filesUploaded[0].url
   // console.log(img)
-
+  
   $.ajax({
 
     url: "https://cors-anywhere.herokuapp.com/https://738618318492637:P31Qlc2xmqJmPu6d8hDZsWVcllA@api.cloudinary.com/v1_1/deukkh9yb/resources/image",
     method: "GET"
   }).then(function(response){
-    console.log(response)
+    console.log(response.data.upload_response)
+    
   });
-  let img = "https://res.cloudinary.com/deukkh9yb/image/upload/v1534902246/wfq5hkm8g44qn9kvpx09.jpg"
+
+  let img = "http://res.cloudinary.com/deukkh9yb/image/upload/s--FI7XnLPo--/v1534908993/cfnbssmuvcbnjreuehns.jpg"
   
   $.ajax({
     url:'https://api-us.faceplusplus.com/facepp/v3/detect?api_key=gJZ3nUhkeoCAF0PEtxIPqnpKJqdZ2WCI&api_secret=j6_u1B2jNR4K5BGCIyRBrPHhnoYyQ6Vs&image_url='+img+'&return_attributes=age,gender,smiling,emotion,ethnicity,eyestatus,beauty',
