@@ -3,14 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Sidenav.init(elems, options);
 });
 
-// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-// var collapsibleElem = document.querySelector('.collapsible');
-// var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-// Or with jQuery
-
-var output = document.getElementById("output");
-
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
@@ -87,35 +79,5 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
 
     });
 });
-
-// let beer= "happy"
-
-
-
-// $.ajax
-
-  // $('.btn').on('click', function(){
-  //   // const client = filestack.init('ACvWqWhqT0uESSK94Rojtz');
-  //   // client.pick();
-    
-  //   var fsClient = filestack.init('ACvWqWhqT0uESSK94Rojtz');
-  //   function openPicker() {
-  //     fsClient.pick({
-  //       fromSources:["local_file_system","url","dropbox"],
-  //       accept:["image/*"]
-  //     }).then(function(response) {
-
-  // // declare this function to handle response
-  // console.log(response);
-
-  // var img = response.filesUploaded[0].url
-  // console.log(img)
-  
-
-
-
-
-
-
 
 })

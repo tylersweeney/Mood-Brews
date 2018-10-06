@@ -12,6 +12,7 @@ var brewdb = new BreweryDb('your-key-here');
 
 
 //set up view engine
+app.use(express.static('public'))
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs');
 
@@ -20,7 +21,7 @@ app.get('/', (req, res) =>{
  });
  
 
-app.use(express.static('public'))
+
 
 
 
