@@ -1,5 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const ejs = require('ejs');
@@ -20,11 +19,6 @@ app.get('/', (req, res) =>{
     res.render('home'); 
  });
  
-
-
-
-
-
 app.listen(PORT, () => {
     console.log('app now listening for requests on port: ' + PORT);
 });

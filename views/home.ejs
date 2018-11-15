@@ -12,14 +12,11 @@
     <!-- Materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="script.js"></script>
-    
+    <!-- Javascript Code that handles Face++,BrewDB, & uploadcare -->
+    <script src="script.js"></script>    
 </head>
 
 <body>
-
-    
-
 
         <ul id="slide-out" class="sidenav">
           <li><div class="user-view">
@@ -37,7 +34,9 @@
           <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<!-- Page title         -->
 <h1>MOOD BREWS</h1>
+<!-- script that handles uploadcare UI -->
 <script>
 UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
 </script>
@@ -45,11 +44,13 @@ UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
 <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" />
 
 <div class= "profile"></div>
+<!-- returned emotion parameters-->
 <span class = "happiness"></span>
 <span class = "sadness"></span>
 <span class = "disgust"></span>
 <span class = "anger"></span>
 <span class = "surprise"></span>
+<!-- Beer bottle image -->
 <div class= "bottle">
 <img src="https://i.imgur.com/EgXo3Ju.png"> 
 <div class= "name"></div>

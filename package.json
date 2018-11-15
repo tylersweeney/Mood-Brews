@@ -1,0 +1,25 @@
+{
+  "name": "beer-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylersweeney/beer-me.git"
+  },
+  "author": "Ty Sweeney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylersweeney/beer-me/issues"
+  },
+  "homepage": "https://github.com/tylersweeney/beer-me#readme",
+  "dependencies": {
+    "brewerydb-node": "0.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
