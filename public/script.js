@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, options);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var elems = document.querySelectorAll('.sidenav');
+//   var instances = M.Sidenav.init(elems, options);
+// });
 
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
+// $(document).ready(function(){
+//   $('.sidenav').sidenav();
+// });
 
 $( document ).ready(function() {
   console.log( "ready!" );
@@ -18,8 +18,8 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
             console.log('File name: ', fileInfo.name);
             console.log('CDN URL: ', fileInfo.cdnUrl);
           var profile = (fileInfo.cdnUrl);  
-          $(".profile").append('<img src="' + fileInfo.cdnUrl + '">');
-          $(".circle").append('<img src="' + fileInfo.cdnUrl + '">');
+          $(".profile").append('<img class="circle responsive-img" src="' + fileInfo.cdnUrl + '">');
+          // $(".circle").append('<img src="' + fileInfo.cdnUrl + '">');
   
 
             $.ajax({
@@ -53,7 +53,7 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
             //   var beer = "angry"
             // } else if (surprise > 25){
             //   var beer = "surprise"
-            })
+            // })
             console.log(beer);
             $.ajax({
               url:"https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=92627&type=brewery&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
@@ -78,3 +78,4 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
             });
           });
         });
+      });
