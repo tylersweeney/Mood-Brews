@@ -10,8 +10,8 @@
 }
 .profile{
     position: absolute;
-    top: 125px;
-    left: 0;
+    top: 250px;
+    left: 150px;
     z-index: 1;
     height: 300px;
     width: 200px;
