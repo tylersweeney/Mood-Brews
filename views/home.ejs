@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Beer Me! Suggest a Beer for my Face</title>
-    <!-- <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="./styles.css" type="text/css"> -->
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <!-- Materialize CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- Javascript Code that handles Face++,BrewDB, & uploadcare -->
-    <script src="script.js"></script>    
+<head>
+  <title>Beer Me! Suggest a Beer for my Face</title>
+  <!-- <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="./styles.css" type="text/css"> -->
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <!-- Materialize CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <!-- Javascript Code that handles Face++,BrewDB, & uploadcare -->
+  <script src="script.js"></script>
 </head>
 
 <body>
 
-        <ul id="slide-out" class="sidenav">
-          <li><div class="user-view">
-            <div class="background">
-              <img src="">
-            </div>
-            <a href="#user"><img class="circle" src=""></a>
-            <a href="#name"><span class="white-text name">John Doe</span></a>
-            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-          </div></li>
-          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-          <li><a href="#!">Second Link</a></li>
-          <li><div class="divider"></div></li>
-          <li><a class="subheader">Subheader</a></li>
-          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-<!-- Page title         -->
-<h1>MOOD BREWS</h1>
-<!-- script that handles uploadcare UI -->
-<script>
-UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
-</script>
-<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-<input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" />
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="">
+        </div>
+        <a href="#user"><img class="circle" src=""></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <!-- Page title         -->
+  <h1>MOOD BREWS</h1>
 
-<div class= "profile"></div>
-<!-- returned emotion parameters-->
-<span class = "happiness"></span>
-<span class = "sadness"></span>
-<span class = "disgust"></span>
-<span class = "anger"></span>
-<span class = "surprise"></span>
-<!-- Beer bottle image -->
-<div class= "bottle">
-<img src="https://i.imgur.com/EgXo3Ju.png"> 
-<div class= "name"></div>
-<div class= "abv"></div>
-<div class= "image"></div>
-</div>
-
-
-
-
-
-
-
-
- 
-
-
+  <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img class="bottle" src="https://i.imgur.com/EgXo3Ju.png">
+            <div class="profile"></div>
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>  <!-- returned emotion parameters-->
+              <span class="happiness"></span>
+              <span class="sadness"></span>
+              <span class="disgust"></span>
+              <span class="anger"></span>
+              <span class="surprise"></span>
+              <!-- Beer bottle image -->
+                <div class="name"></div>
+                <div class="abv"></div>
+                <div class="image"></div></p>
+          </div>
+          <div class="card-action">
+            <!-- script that handles uploadcare UI -->
+              <script>
+                  UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
+              </script>
+                <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+                <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" />
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

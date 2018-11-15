@@ -11,13 +11,16 @@ var brewdb = new BreweryDb('your-key-here');
 
 
 //set up view engine
-app.use(express.static('public'))
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs');
 
+// create home route
 app.get('/', (req, res) =>{
     res.render('home'); 
  });
+
+//serve static files from public folder
+app.use(express.static('public'))
  
 app.listen(PORT, () => {
     console.log('app now listening for requests on port: ' + PORT);

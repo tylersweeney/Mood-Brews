@@ -43,17 +43,17 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
             // var face = (response);
             // var obj = JSON.parse(face)
             // output.innerHTML += emotion;
-            if (happiness > 25){
-              var beer = "happy"
-            } else if (sadness > 25){
-              var beer = "sad"
-            } else if (disgust > 25){
-              var beer = "disgusting"
-            } else if (anger > 25){
-              var beer = "angry"
-            } else if (surprise > 25){
-              var beer = "surprise"
-            }
+            // if (happiness > 25){
+            //   var beer = "happy"
+            // } else if (sadness > 25){
+            //   var beer = "sad"
+            // } else if (disgust > 25){
+            //   var beer = "disgusting"
+            // } else if (anger > 25){
+            //   var beer = "angry"
+            // } else if (surprise > 25){
+            //   var beer = "surprise"
+            })
             console.log(beer);
             $.ajax({
               url:"https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=92627&type=brewery&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
@@ -76,8 +76,5 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
               };
               });
             });
-
-    });
-});
-
-})
+          });
+        });

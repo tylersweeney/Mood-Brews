@@ -9,6 +9,6 @@
     z-index: -1;
 }
 
-/* .profile{
-
-} */
+.profile{
+    z-index: 1;
+}
