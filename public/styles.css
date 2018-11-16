@@ -28,9 +28,10 @@
     height: 300px;
     width: 200px;   
 }
-#beer-label{
-    top: 150px;
-    left: 150px;
+.beer-label{
+    position: absolute;
+    top: 550px;
+    left: 200px;
 }
 
 body{
