@@ -66,7 +66,7 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
               method: 'GET'
               }).done(function(response){
                 console.log(response)
-                for(let i=0; i<5; i++) {
+                for(let i=0; i<1; i++) {
 
                   // console.log(response.data[i].name)
                   // console.log(response.data[i].labels.medium)
