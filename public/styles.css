@@ -2,6 +2,15 @@
 	font-size:30px;
 }
 
+h3, .brand-logo{
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 .card .card-image img {
     display: block;
     border-radius: 50%;
@@ -12,12 +21,6 @@
     bottom: 0;
 }
 
-.bottle {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 0 ;
-}
 .profile{
     border-radius: 50%;
     position: absolute;
