@@ -11,9 +11,12 @@ p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+
+
 .card .card-image img {
     display: block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     position: relative;
     left: 0px;
     right: 0;
@@ -30,6 +33,7 @@ p{
     height: 300px;
     width: 200px;   
 }
+
 
 body{
     background-color: #ffecb3;
