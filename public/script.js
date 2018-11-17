@@ -70,6 +70,7 @@ $(document).ready(function () {
         url: "https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=" + beer + "&type=beer&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
         method: 'GET'
       }).done(function (response) {
+        console.log(response);
         console.log(response.data[beerChoice].name)
         // console.log(response.data[i].labels.medium)
         console.log("ABV: " + response.data[beerChoice].style.abvMax + "%")
