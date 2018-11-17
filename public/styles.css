@@ -11,27 +11,14 @@ p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-
-
-
-.card .card-image img {
-    display: block;
-    /* border-radius: 50%; */
-    position: relative;
-    left: 0px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.profile{
-    border-radius: 50%;
+.pic{
+    border-radius: 40%;
     position: absolute;
-    top: 250px;
-    left: 150px;
+    top: 550px;
+    left: 30px;
     z-index: 1;
-    height: 300px;
-    width: 200px;   
+    height: 30%;
+    width: 214px;   
 }
 
 

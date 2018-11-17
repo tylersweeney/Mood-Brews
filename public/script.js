@@ -7,7 +7,7 @@ $(document).ready(function () {
     console.log('File name: ', fileInfo.name);
     console.log('CDN URL: ', fileInfo.cdnUrl);
     var profile = (fileInfo.cdnUrl);
-    $(".profile").append('<img src=' + fileInfo.cdnUrl + '>');
+    $(".profile").append('<img class="pic" src=' + fileInfo.cdnUrl + '>');
 
     //Facial recognition API POST call
     $.ajax({

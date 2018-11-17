@@ -16,62 +16,50 @@
   <!-- Materialize CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
-    <link rel="stylesheet" href="styles.css" type="text/css">
-  
-  
+  <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper amber darken-2">
-          <a href="/" class="brand-logo">Mood Brews</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-          </ul>
-        </div>
-      </nav>
+  <nav>
+    <div class="nav-wrapper amber darken-2">
+      <a href="/" class="brand-logo">Mood Brews</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
 
   <!-- Page title         -->
   <h3>Find your mood Brew</h3>
   <p>Take or upload an image below to find your mood brew</p>
   <div class="row">
-      <div class="card col s8 offset-s2">
-          
-          <div class="card-image">
+    <div class="beerContainer">
+      <div class="profile"></div>
+      <img src="beer_bottle.png">
+      <span class="name"></span>
+      <span class="abv"></span>
+      <span class="image"></span>
+    </div>
+  </div>
 
-            <div class="card-image-container">
-                <div class="profile"></div>
-              <img src="beer_bottle.png">
-              <!-- <img src="https://i.imgur.com/EgXo3Ju.png"> -->
-              
-
-                    <!-- Beer bottle image -->
-                    <div class="beer-label">
-                      <span class="name"></span>
-                      <span class="abv"></span>
-                      <span class="image"></span>
-                    </div>
-                  </div>
-
-            </div>
-
-          </div>
-          <div><!-- script that handles uploadcare UI -->
-            <script>
-                UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
+  <div>
+    <!-- script that handles uploadcare UI -->
+    <script>
+      UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
             </script>
-              <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-              <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" /></div>
+    <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" />
+  </div>
 
-          <div class="card-content">
-            <!-- returned emotion parameters-->
-                <span class="happiness"></span>
-                <span class="sadness"></span>
-                <span class="disgust"></span>
-                <span class="anger"></span>
-                <span class="surprise"></span>
-             
-          </div>
+  <div class="emotions">
+    <!-- returned emotion parameters-->
+    <span class="happiness"></span>
+    <span class="sadness"></span>
+    <span class="disgust"></span>
+    <span class="anger"></span>
+    <span class="surprise"></span>
   </div>
 </body>
 
