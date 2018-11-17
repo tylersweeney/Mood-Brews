@@ -35,8 +35,7 @@
   <h3>Find your mood Brew</h3>
   <p>Take or upload an image below to find your mood brew</p>
   <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
+      <div class="card col s8 offset-s2">
           <div class="card-image">
 
             <div class="card-image-container">
@@ -54,6 +53,12 @@
             </div>
 
           </div>
+          <div><!-- script that handles uploadcare UI -->
+            <script>
+                UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
+            </script>
+              <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+              <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" /></div>
 
           <div class="card-content">
             <!-- returned emotion parameters-->
@@ -64,17 +69,6 @@
                 <span class="surprise"></span>
              
           </div>
-          <div class="card-action">
-            <!-- script that handles uploadcare UI -->
-              <script>
-                  UPLOADCARE_PUBLIC_KEY = "890c3da7eb6aeb118171";
-              </script>
-                <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-                <input type="hidden" role="uploadcare-uploader" name="my_file" id="uploadcare-file" />
-
-                
-          </div>
-    </div>
   </div>
 </body>
 
