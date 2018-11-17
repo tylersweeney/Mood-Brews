@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tylersweeney/beer-me#readme",
   "dependencies": {
     "brewerydb-node": "0.0.1",
+    "cors": "^2.8.5",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "path": "^0.12.7"
