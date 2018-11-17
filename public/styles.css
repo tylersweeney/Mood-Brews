@@ -6,11 +6,10 @@
     display: block;
     border-radius: 50%;
     position: relative;
-    left: 0;
+    left: 0px;
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
 }
 
 .bottle {
@@ -28,10 +27,7 @@
     height: 300px;
     width: 200px;   
 }
-.beer-label{
-    position: absolute;
-}
 
 body{
-    background-color: #DCF2FB;
+    background-color: #ffecb3;
 }

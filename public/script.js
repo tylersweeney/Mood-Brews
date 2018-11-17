@@ -35,24 +35,33 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
             var anger = (response.faces[0].attributes.emotion.anger);
             var surprise = (response.faces[0].attributes.emotion.surprise);
             console.log(detect)
+            console.log(response);
             $(".happiness").append("Happiness: " + happiness)
             $(".sadness").append("Sadness: " + sadness)
             $(".disgust").append("Disgust: " + disgust)
             $(".anger").append("Anger: " + anger)
             $(".surprise").append("Surprise: " + surprise)
-            var face = (response);
             if (happiness > 25){
               var beer = "happy"
+              console.log("search is: " + beer);
             } else if (sadness > 25){
               var beer = "sad"
+              console.log("search is: " + beer);
             } else if (disgust > 25){
               var beer = "disgusting"
+              console.log("search is: " + beer);
             } else if (anger > 25){
               var beer = "angry"
+              console.log("search is: " + beer);
             } else if (surprise > 25){
               var beer = "surprise"
+              console.log("search is: " + beer);
+            }else{
+              var beer = "robot"
+              console.log("What is Emotion?");
             }
-            console.log(beer);
+              
+            
             // var obj = JSON.parse(face)
             // output.innerHTML += emotion;
 
@@ -67,17 +76,20 @@ var widget = uploadcare.Widget('[role=uploadcare-uploader]');
               url:"https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/search?q=" + beer + "&type=beer&key=9ec4dd555b05addcdc32bc600a2dd1f2&format=json",
               method: 'GET'
               }).done(function(response){
-                
-                for(let i=0; i<1; i++) {
-                  console.log(response)
-                  console.log(response.data[i].name)
+
+                // Random number so user doesn't always get same top result
+                var beerChoice= Math.floor(Math.random() * 50) + 1  
+                  console.log(response.data[beerChoice].name)
                   // console.log(response.data[i].labels.medium)
-                  console.log("ABV: " + response.data[i].style.abvMax + "%")
-                  $(".name").append(response.data[i].name)
-                  $(".abv").append("ABV: " + response.data[i].style.abvMax + "%")
+                  console.log("ABV: " + response.data[beerChoice].style.abvMax + "%")
+                  $(".name").append(response.data[beerChoice].name)
+                  $(".abv").append("ABV: " + response.data[beerChoice].style.abvMax + "%")
                   // $(".image").append('<img src="' + response.data[i].labels.medium + '">')
-              };
+                  console.log("random number is: " + beerChoice)
+                
+              
               });
+              
             });
           });
         });
