@@ -74,7 +74,7 @@ $(document).ready(function () {
         console.log(response.data[beerChoice].name)
         // console.log(response.data[i].labels.medium)
         console.log("ABV: " + response.data[beerChoice].style.abvMax + "%");
-        $(".beerLabel").append("<div class ='label'><span class='name'></span><br><span class='abv'></span></div>");
+        $(".beerLabel").append("<div class ='label'><span class='name'></span><br><span class='abv'></span><br><span class='ibu'></span></div>");
         
         if (response.data[beerChoice].description === ""){
           $(".description").append(response.data[beerChoice].style.description);
@@ -84,6 +84,14 @@ $(document).ready(function () {
         $(".name").append(response.data[beerChoice].name);
         $(".beer-title").append(response.data[beerChoice].name);
         $(".abv").append("ABV: " + response.data[beerChoice].style.abvMax + "%");
+        
+        if (response.data[beerChoice].ibu === ""){
+          $(".ibu").append("IBU: " + response.data[beerChoice].ibu);
+          $(".ibu").append("IBU: " + response.data[beerChoice].style.ibuMax);
+        }else{
+          $(".ibu").append("IBU: " + response.data[beerChoice].style.ibuMax);
+        }
+        
         // $(".image").append('<img src="' + response.data[i].labels.medium + '">')
         console.log("random number is: " + beerChoice)
       });
