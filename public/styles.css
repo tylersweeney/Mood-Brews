@@ -2,7 +2,7 @@
 	font-size:30px;
 }
 
-.brand-logo{
+h3, .brand-logo{
     font-family: 'Spicy Rice', cursive;
     text-align: center;
 }
@@ -13,7 +13,7 @@ p{
 }
 .pic{
     border-radius: 40% 40% 0 0;
-    position: absolute;
+    position: relative;
     top: 550px;
     left: 30px;
     z-index: 1;
@@ -23,12 +23,12 @@ p{
 
 .label{
     border-radius: 10%;
-    position: absolute;
-    top: 750px;
+    position: relative;
+    top: 870px;
     left: 20px;
     z-index: 1;
     height: 114px;
-    width: 235px;  
+    width: 225px;  
     z-index: 2;
     text-align: center;
     font-size:25px;
@@ -40,3 +40,10 @@ p{
 body{
     background-color: #ffecb3;
 }
+
+.beerContainer{
+    margin: auto;
+    width: 50%;
+}
+
+
