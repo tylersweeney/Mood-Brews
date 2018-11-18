@@ -77,7 +77,7 @@ $(document).ready(function () {
         $(".beerLabel").append("<div class ='label'><span class='name'></span><br><span class='abv'></span></div>");
         $(".description").append(response.data[beerChoice].description);
         $(".name").append(response.data[beerChoice].name);
-        $(".card-title").append(response.data[beerChoice].name);
+        $(".beer-title").append(response.data[beerChoice].name);
         $(".abv").append("ABV: " + response.data[beerChoice].style.abvMax + "%");
         // $(".image").append('<img src="' + response.data[i].labels.medium + '">')
         console.log("random number is: " + beerChoice)
