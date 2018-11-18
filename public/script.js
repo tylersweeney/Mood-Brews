@@ -87,7 +87,6 @@ $(document).ready(function () {
         
         if (response.data[beerChoice].ibu === ""){
           $(".ibu").append("IBU: " + response.data[beerChoice].ibu);
-          $(".ibu").append("IBU: " + response.data[beerChoice].style.ibuMax);
         }else{
           $(".ibu").append("IBU: " + response.data[beerChoice].style.ibuMax);
         }
