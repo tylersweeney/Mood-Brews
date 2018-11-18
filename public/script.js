@@ -40,12 +40,12 @@ $(document).ready(function () {
         console.log("search is: " + beer);
       } else if (sadness > 25) {
         var beer = "cheer"
-        var beerChoice = Math.floor(Math.random() * 11) + 1
+        var beerChoice = Math.floor(Math.random() * 10) + 1
         console.log(beerChoice);
         console.log("search is: " + beer);
       } else if (disgust > 25) {
         var beer = "weird"
-        var beerChoice = Math.floor(Math.random() * 17) + 1
+        var beerChoice = Math.floor(Math.random() * 16) + 1
         console.log(beerChoice);
         console.log("search is: " + beer);
       } else if (anger > 25) {
