@@ -75,7 +75,12 @@ $(document).ready(function () {
         // console.log(response.data[i].labels.medium)
         console.log("ABV: " + response.data[beerChoice].style.abvMax + "%");
         $(".beerLabel").append("<div class ='label'><span class='name'></span><br><span class='abv'></span></div>");
-        $(".description").append(response.data[beerChoice].description);
+        
+        if (response.data[beerChoice].description === ""){
+          $(".description").append(response.data[beerChoice].style.description);
+        } else {
+          $(".description").append(response.data[beerChoice].description);
+        };
         $(".name").append(response.data[beerChoice].name);
         $(".beer-title").append(response.data[beerChoice].name);
         $(".abv").append("ABV: " + response.data[beerChoice].style.abvMax + "%");
