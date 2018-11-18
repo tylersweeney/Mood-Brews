@@ -24,10 +24,10 @@ p{
 .label{
     border-radius: 10%;
     position: relative;
-    top: -427px;
+    top: -430px;
     left: 25px;
     z-index: 1;
-    height: 114px;
+    /* height: 114px; */
     width: 225px;  
     z-index: 2;
     text-align: center;
