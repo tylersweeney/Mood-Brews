@@ -67,7 +67,7 @@ $(document).ready(function () {
 console.log(beer)
       //BreweryDB API AJAX GET call
       $.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/search?q=" + beer + "&type=beer&key=fb5932edab9b8bfb7f148d107177dfd359f2f6316eed4ddaf8ce120c8cd8e2e8&format=json",
+        url: "https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/search?q=" + beer + "&type=beer&key=cd73f9d773168bc31cb33c4f9fe5e9b7&format=json",
         method: 'GET'
       }).done(function (response) {
         console.log(response);
@@ -79,7 +79,8 @@ console.log(beer)
         
         $(".name").append(response.data[beerChoice].name);
         $(".beer-title").append(response.data[beerChoice].name);
-        $(".abv").append("ABV: " + response.data[beerChoice].style.abvMax + "%");
+        $(".abv").append("ABV: " + response.data[beerChoice].style
+        .abvMax + "%");
         
         if (response.data[beerChoice].ibu === ""){
           $(".ibu").append("IBU: " + response.data[beerChoice].ibu);
