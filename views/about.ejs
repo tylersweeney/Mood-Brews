@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>More about us and the app</title>
+    <!-- Google Font "Spicy Rice" and "Roboto" -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400i|Spicy+Rice" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <!-- Javascript Code that handles Face++,BrewDB, & uploadcare -->
+    <script src="script.js"></script>
+  
+    <script src="https://ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
+  
+    <!-- Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper amber darken-2">
+    <a href="/" class="brand-logo">Mood Brews</a>
+    <ul id="nav-mobile" class="left">
+        <li><a href="about.ejs">About</a></li>
+    </ul>
+    </div>
+</nav>
+<div class="row">
+    <div class="aboutMain col s6">
+        <img class="faceAPI col s6"src="face.png">
+        <p>
+            After uploading an image of your face we use the Face++ "Face Attributes" API
+            to analyze a series of face related attributes including age, gender, smile intensity, 
+            head pose, eye status, emotion, beauty, eye gaze, mouth status, skin status, ethnicity, face image quality and blurriness.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

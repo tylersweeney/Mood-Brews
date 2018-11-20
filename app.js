@@ -20,6 +20,10 @@ app.get('/', function (req, res){
     res.render('home'); 
  });
 
+app.get('/about', (req, res) =>{
+    res.render('about');
+})
+
 //serve static files from public folder
 app.use(express.static('public'))
  

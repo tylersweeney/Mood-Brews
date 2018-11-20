@@ -76,3 +76,7 @@ div:empty {
     margin: auto;
     width: 20%;
 }
+
+.aboutMain{
+    padding:20px;
+}
